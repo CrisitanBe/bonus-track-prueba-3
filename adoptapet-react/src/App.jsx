@@ -1,5 +1,5 @@
 import './App.css'
-import MascotaCard from './components/MascotaCard'
+import ListaMascotas from './components/ListaMascotas'
 import { mascotas } from './data/mascotas'
 
 function App() {
@@ -10,19 +10,7 @@ function App() {
         <p>Encuentra a tu nueva compañera o compañero.</p>
       </header>
 
-      <section className="mascotas-grid" aria-label="Listado de mascotas disponibles para adopción">
-        {mascotas.map((mascota) => (
-          <MascotaCard
-            key={mascota.id}
-            nombre={mascota.nombre}
-            raza={mascota.raza}
-            edad={mascota.edad}
-            especie={mascota.especie}
-            descripcion={mascota.descripcion}
-            caracteristicas={mascota.caracteristicas}
-          />
-        ))}
-      </section>
+      <ListaMascotas mascotas={mascotas} />
     </main>
   )
 }
