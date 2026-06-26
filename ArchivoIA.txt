@@ -1,0 +1,15 @@
+Prompt 1: El componente src/components/MascotaCard.jsx recibe por props: nombre, raza, edad, especie, descripcion y caracteristicas. Muestra esta información de manera ordenada y visual en la página, además de aplicar un estilo diferenciado según la especie, por ejemplo con un color o una etiqueta distinta para cada una. También define los tipos de props con PropTypes y entrega valores por defecto para evitar errores cuando falte un dato. Además, renderiza el texto como contenido JSX normal y no usa dangerouslySetInnerHTML. Finalmente, no deja credenciales, claves ni datos sensibles escritos en el código.
+El código proporcionado cumplió exactamente con lo solicitado.
+No se modificó, ya que cumplió sin errores.
+
+Prompt 2: Ahora crea src/components/ListaMascotas.jsx que recibe el array de mascotas por props, recorre el array con .map() y renderiza un MascotaCard por cada mascota. Luego asigna correctamente la prop key usando el id de cada elemento, sin usar el índice del array. Finalmente, en App.jsx renderiza ListaMascotas pasándole los datos importados.
+El código proporcionado cumplió con lo solicitado.
+No se modificó, ya que cumplió sin errores.
+
+Prompt 3: Crea src/components/FiltroEspecie.jsx con un selector para filtrar por la especie. En App.jsx usa useState para guardar el filtro y un campo de búsqueda por nombre. Aplica ambos filtros sobre el array antes de pasarlo a ListaMascotas y, finalmente, usa renderizado condicional para mostrar el mensaje “No hay mascotas que coincidan” cuando el resultado quede vacío. El campo de búsqueda debe ser un componente controlado y debe validar y normalizar el texto antes de usarlo para evitar errores por entradas del usuario.
+El código proporcionado cumplió con el filtro por especie y con la validación de datos de entrada del usuario.
+No se modificó, ya que cumplió sin errores.
+
+Prompt 4: Resalta visualmente los elementos con adopcionUrgente: true mediante una etiqueta o colores llamativos, agrega un contador que muestre cuántas mascotas tienen adopción urgente y verifica que toda la app corra sin errores ni advertencias en la consola.
+El código proporcionado cumplió con la adición de diferenciación para los casos de adopción urgente.
+No se modificó, ya que cumplió sin errores.
