@@ -102,3 +102,56 @@
 .mascota-card--otro .mascota-card__species {
   color: #16a34a;
 }
+
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.filtros__botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.filtro-boton {
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text-h);
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filtro-boton--activo {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.buscador {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: var(--text-h);
+}
+
+.buscador input {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.6rem 0.85rem;
+  min-width: 220px;
+}
+
+.mensaje-vacio {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--text-h);
+  font-weight: 600;
+}
