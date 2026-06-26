@@ -7,6 +7,7 @@
  * - especie: texto con el tipo de especie (Perro, Gato u Otro).
  * - descripcion: texto breve de presentación de la mascota.
  * - caracteristicas: arreglo de textos con características destacadas.
+ * - adopcionUrgente: valor booleano que indica si la mascota requiere adopción inmediata.
  */
 function MascotaCard({
   nombre = 'Sin nombre',
@@ -15,6 +16,7 @@ function MascotaCard({
   especie = 'Otro',
   descripcion = 'Sin descripción disponible',
   caracteristicas = [],
+  adopcionUrgente = false,
 }) {
   const especieTexto = typeof especie === 'string' && especie.trim() ? especie.trim() : 'Otro'
 
@@ -45,7 +47,7 @@ function MascotaCard({
     : []
 
   return (
-    <article className={`mascota-card ${estiloActual.clase}`}>
+    <article className={`mascota-card ${estiloActual.clase} ${adopcionUrgente ? 'mascota-card--urgente' : ''}`}>
       <div className="mascota-card__header">
         <div>
           <p className="mascota-card__species">
@@ -53,7 +55,10 @@ function MascotaCard({
           </p>
           <h3 className="mascota-card__name">{textoNombre}</h3>
         </div>
-        <span className="mascota-card__badge">{textoRaza}</span>
+        <div className="mascota-card__header-actions">
+          {adopcionUrgente && <span className="mascota-card__urgent">URGENTE</span>}
+          <span className="mascota-card__badge">{textoRaza}</span>
+        </div>
       </div>
 
       <div className="mascota-card__meta">

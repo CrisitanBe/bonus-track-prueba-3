@@ -12,6 +12,7 @@ function ListaMascotas({ mascotas = [] }) {
           especie={mascota.especie}
           descripcion={mascota.descripcion}
           caracteristicas={mascota.caracteristicas}
+          adopcionUrgente={mascota.adopcionUrgente}
         />
       ))}
     </section>

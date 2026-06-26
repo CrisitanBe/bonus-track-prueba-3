@@ -22,11 +22,16 @@ function App() {
     })
   }, [busquedaNormalizada, filtroEspecie])
 
+  const urgentes = useMemo(() => {
+    return mascotas.filter((mascota) => mascota.adopcionUrgente).length
+  }, [])
+
   return (
     <main className="app-shell">
       <header className="app-header">
         <h1>AdoptaPet</h1>
         <p>Encuentra a tu nueva compañera o compañero.</p>
+        <p className="contador-urgentes">Mascotas con adopción urgente: {urgentes}</p>
       </header>
 
       <FiltroEspecie

@@ -103,6 +103,33 @@
   color: #16a34a;
 }
 
+.mascota-card--urgente {
+  border: 2px solid #dc2626;
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.12), 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.mascota-card__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mascota-card__urgent {
+  background: #dc2626;
+  color: white;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.28rem 0.5rem;
+  border-radius: 999px;
+}
+
+.contador-urgentes {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: #dc2626;
+}
+
 .filtros {
   display: flex;
   flex-wrap: wrap;
